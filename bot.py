@@ -19,7 +19,7 @@ def start(update, context):
     """Send a message when the command /start is issued."""
     userName = update.effective_user['first_name']
     user_id = update.effective_user['id']  # get user id
-    info="Hola esta es tu info: /n Nombre_usuario :"+str(userName)+"/n User_id:"+str(user_id)
+    info="Hola esta es tu info: \n Nombre_usuario :"+str(userName)+"\n User_id:"+str(user_id)
 
     update.message.reply_text(info)
 
